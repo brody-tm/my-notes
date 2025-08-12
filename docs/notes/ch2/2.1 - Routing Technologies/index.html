@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/my-notes/bundle.css">
+</head>
+<body>
+    
+<a href="/"> Back </a>
+
+<p>Entries in a routing table
+![[Screenshot (24).png]]Prefix Length - longer/more specific wins</p>
+<p>Administrative Distance - Used by the router to determine which routing protocol has priority</p>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Administrative Distance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Local</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Static route</td>
+<td>1</td>
+</tr>
+<tr>
+<td>EIGRP</td>
+<td>90</td>
+</tr>
+<tr>
+<td>OSPF</td>
+<td>110</td>
+</tr>
+<tr>
+<td>RIPv1 and RIPv2</td>
+<td>120</td>
+</tr>
+<tr>
+<td>DHCP default route</td>
+<td>254</td>
+</tr>
+<tr>
+<td>Unknown</td>
+<td>255</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/my-notes/bundle.css">
+</head>
+<body>
+    
+<a href="/"> Back </a>
+
+<p>DNS (Domain Name System) resolves domain names to IP addresses</p>
+<p>TLD (Top Level Domain)</p>
+<ul>
+<li>gTLD: .com, .net, .org, etc.</li>
+<li>ccTLD: .us, .ca, etc.</li>
+</ul>
+<p>13 root DNS server clusters with over 1000 servers</p>
+<p>FQDN (Fully Qualified Domain Name) - A complete and unambiguous domain name that specifies the exact location of a device or resource on the internet</p>
+<ul>
+<li>www.businesscompany.com</li>
+<li>east.businesscompany.com</li>
+<li>john.east.businesscompany.com</li>
+</ul>
+<p>Primary and Secondary DNS Servers - Offer redundancy</p>
+<ul>
+<li>Primary - contains all zone info for a domain. Changes and updates are made to the primary server</li>
+<li>Secondary - zone info is read-only. Zone transfers are pushed from the primary DNS server</li>
+</ul>
+<p>Local name resolution - We can override the DNS server to resolve domain names locally. This is configured with a &quot;hosts&quot; file, containing a list of IP addresses and host names</p>
+<p>DNS Forward Lookup - Type in domain name, DNS server returns IP</p>
+<p>Reverse DNS - Type in IP address, DNS server returns FQDN</p>
+<p>Authoritative DNS Server - The primary DNS server for a domain. It is the authority for an entire DNS zone</p>
+<p>Non-authoritative server - Secondary DNS server or cache. Possibility to be outdated</p>
+<ul>
+<li>TTL - How long information will be cached</li>
+</ul>
+<p>Recursive DNS queries - Recursively populate local DNS server to cache information</p>
+<ul>
+<li>Large cache improves speed</li>
+</ul>
+<h3>Recursive DNS Query Process</h3>
+<p>looking for &quot;google.com&quot;</p>
+<ol>
+<li>Device queries local name server, result not found</li>
+<li>Local name server queries root name server, .com name server returned</li>
+<li>Local name server queries .com name server, google.com name server returned</li>
+<li>Local name server queries google.com, IP address returned and cached</li>
+</ol>
+<h3>Securing DNS</h3>
+<p>DNSSEC (DNS Security Extensions)</p>
+<ul>
+<li>Responses from DNS servers are digitally signed to ensure authenticity</li>
+</ul>
+<p>Encryption</p>
+<ul>
+<li>DNS over TLS (DoT)</li>
+<li>DNS over HTTPS (DoH)</li>
+</ul>
+
+</body>
+</html>

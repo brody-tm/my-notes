@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/my-notes/bundle.css">
+</head>
+<body>
+    
+<a href="/"> Back </a>
+
+<p><strong>Independent Basis Service Set (IBSS)</strong></p>
+<ul>
+<li>Two devices communicate directly using 802.11 with no access point</li>
+<li>This is an <em>ad hoc</em> connection, meaning it is created on the fly for a specific purpose, without an access point</li>
+<li>It is commonly used for IoT</li>
+</ul>
+<p>Access Point Parameters</p>
+<ul>
+<li>SSID (Service Set Identifier) - The name of the wireless network
+<ul>
+<li>The same SSID may be used for multiple APs</li>
+</ul>
+</li>
+<li>BSSID (Basic Service Set Identifier) - The hardware address of an access point</li>
+</ul>
+<p>ESSID (Extended SSID) - The network name shared across access points</p>
+<ul>
+<li>Allows for a user to walk between different APs and stay connected</li>
+</ul>
+<p>Captive Portal - The log-in screen that appears when first connecting to a wireless network</p>
+<hr>
+<p><strong>Wireless Security Modes</strong>
+WPA/2/3-Personal / WPA/2/3-PSK</p>
+<ul>
+<li>WPA2 or WPA3 with a pre-shared key</li>
+<li>Everyone uses the same 256-bit key</li>
+</ul>
+<p>WPA/2/3-Enterprise / WPA/2/3-802.1X</p>
+<ul>
+<li>Authenticates users individually with an authentication server (i.e. RADIUS, LDAP, etc)</li>
+</ul>
+<p>OWE (Opportunistic Wireless Encryption)</p>
+<ul>
+<li>Allows a user to connect to the network without authentication, but prohibits it from communicating with other devices on the network</li>
+</ul>
+<hr>
+<p>Omnidirectional Antenna</p>
+<ul>
+<li>One of the most common on APs</li>
+<li>Signal is evenly distributed on all sides</li>
+</ul>
+<p>Directional Antenna</p>
+<ul>
+<li>Focuses signal in one direction
+<ul>
+<li>Increases range</li>
+</ul>
+</li>
+<li>Examples: Yagi, Parabolic (single point)</li>
+</ul>
+<hr>
+<p><strong>Managing Wireless Configurations</strong>
+Autonomous access points</p>
+<ul>
+<li>General purpose</li>
+<li>Switch is not wireless-aware</li>
+</ul>
+<p>Lightweight access points</p>
+<ul>
+<li>Intelligence is in the switch</li>
+<li>Less Expensive</li>
+<li>Control and Provision</li>
+</ul>
+<hr>
+<p>Control and Provision</p>
+<ul>
+<li>CAPWAP (Control and Provisioning of Wireless Access Points) - an RFC standard that allows for the management of multiple APs simultaneously</li>
+</ul>
+<p>Wireless LAN Controller</p>
+<ul>
+<li>Centralized management of access points - A single &quot;pane of glass&quot;</li>
+<li>Allows for AP deployment, performance and security monitoring, batch configuration, reporting, etc.</li>
+<li>Usually a propriety system that is paired with the APs</li>
+</ul>
+
+</body>
+</html>

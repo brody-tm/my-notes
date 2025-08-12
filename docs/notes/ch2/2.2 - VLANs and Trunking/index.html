@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/my-notes/bundle.css">
+</head>
+<body>
+    
+<a href="/"> Back </a>
+
+<h3>LAN</h3>
+<p><strong>LAN</strong> - A group of devices in the same <strong>broadcast domain</strong></p>
+<p><strong>Broadcast domain</strong> - A logical area in a network where broadcast MAC address (FF:FF:FF:FF:FF:FF) frames are forwarded to all devices within that segment</p>
+<ul>
+<li>Essentially, a network area where any device can send a message that every other device in that area will receive</li>
+</ul>
+<p>When we connect a group of devices to a [[1.2 - Networking Devices#Switch|switch]], they are in the same broadcast domain</p>
+<hr>
+<h3>VLAN</h3>
+<p><strong>VLAN</strong> - A group of devices in the same broadcast domain, but separated logically instead of physically</p>
+<ul>
+<li>e.g. a single switch can have two different virtual LANs that devices can be a part of</li>
+</ul>
+<p>VLANs are defined by number and configured in the switch (VLAN database).</p>
+<p>VLANS can be connected across different switches.</p>
+<ul>
+<li>This can be done by connecting the VLANs via ethernet cable, but this is not scalable.</li>
+<li>Instead, this can be achieved by using a <strong>VLAN Trunk</strong></li>
+</ul>
+<hr>
+<h3>Trunking</h3>
+<p><strong>VLAN Trunk (802.1Q Trunk, .1Q Trunk)</strong> - A single ethernet connection between switches configured as a &quot;Trunk Interface&quot;</p>
+<p>Anything sent from VLAN 1 on one switch will arrive at VLAN 1 on another switch via this connection.</p>
+<p><strong>How it Works</strong>
+A VLAN header containing a 12-bit VLAN ID is added to the ethernet frame, allowing for 4,094 VLANs to traverse the trunk connection.</p>
+<p>Before 802.1Q, there was ISL (Inter-Switch Link)</p>
+<ul>
+<li>No longer used</li>
+</ul>
+<p><strong>Default VLAN</strong>
+The VLAN that new devices are connected to by default</p>
+<ul>
+<li>Most commonly VLAN 1</li>
+</ul>
+<p><strong>Native VLAN</strong> - <em>connects switches without a tag</em>
+Every trunk has a native VLAN that doesn't use an 802.1Q header</p>
+<ul>
+<li>Used to communicate with devices that don't use 802.1Q</li>
+<li>Native VLAN should match between switches</li>
+</ul>
+<hr>
+<h3>Layer 3 Switches</h3>
+<p>A switch and router in a single device</p>
+<ul>
+<li>Switching still operates at layer 2</li>
+<li>Routing still operates at layer 3</li>
+</ul>
+<p>Allows for routing between VLANs on the same switch</p>
+<p>Internal router connects to the VLANs over VLAN interfaces (also called switched virtual interfaces (SVI))</p>
+<hr>
+<h3>Voice and Data</h3>
+<p>Voice and data contend with each other. To mitigate this, put computers on one VLAN and phones on another.</p>
+<p>One wire connecting the computer and phone to one switch interface.</p>
+<p>Voice and data is split up because each switch interface has a voice VLAN and data VLAN.</p>
+
+</body>
+</html>

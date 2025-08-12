@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/my-notes/bundle.css">
+</head>
+<body>
+    
+<a href="/"> Back </a>
+
+<h3>Access Control Lists (ACLs)</h3>
+<p>Allow or disallow traffic based on different factors, such as source and destination IP, port number, time of day, application, etc.</p>
+<p>&quot;Don't allow video streaming traffic from to 192.169.1.0 past 5 PM or on weekends&quot;</p>
+<p><strong>Firewall Security Policies</strong> are a complex form of ACLs - allow for very specific and fine-grain security control</p>
+<h3>Firewall Rules</h3>
+<p>Firewall rules follow a logical path, usually from top to bottom. Generally, more specific rules are at the top while more general rules are at the bottom</p>
+<p>Example:</p>
+<table>
+<thead>
+<tr>
+<th>Rule Number</th>
+<th>Remote IP</th>
+<th>Remote Port</th>
+<th>Local Port</th>
+<th>Protocol</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>All</td>
+<td>Any</td>
+<td>22</td>
+<td>TCP</td>
+<td>Allow</td>
+</tr>
+<tr>
+<td>2</td>
+<td>All</td>
+<td></td>
+<td></td>
+<td>ICMP</td>
+<td>Deny</td>
+</tr>
+</tbody>
+</table>
+<p>If traffic doesn't match any existing rule, it will automatically be denied. This is known as an <strong>implicit deny</strong></p>
+<h3>URL Filtering</h3>
+<p>Allow or restrict traffic based on Uniform Resource Location/Identifier (URI)</p>
+<p>We can manage access to sites based on category, such as auction sites, travel sites, etc.</p>
+<p>Often integrated into a NGFW</p>
+<h3>Content Filtering</h3>
+<p>Software can monitor data being sent over a network for sensitive information and prevent that traffic from traversing the network</p>
+<p>NSFW filters, parental controls, anti-virus, and anti-malware software provide a type of content filtering</p>
+<h3>Screened Subnet</h3>
+<p>A separate area of your network that visitors can access over the internet, allowing for public access to public materials, such as web servers, while keeping private data inaccessible</p>
+<h3>Security Zones</h3>
+<p>Zone-based security - more flexible and secure than IP address ranges</p>
+<p>A network is separated into zones, for example, a trusted and untrusted zone</p>
+<p>We can then make security policies that reference these zones, for example, if the trusted and untrusted zones are allowed to communicate</p>
+
+</body>
+</html>

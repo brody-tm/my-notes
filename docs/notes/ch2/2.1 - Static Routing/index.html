@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/my-notes/bundle.css">
+</head>
+<body>
+    
+<a href="/"> Back </a>
+
+<p><strong>Job of the router</strong> - forwarding traffic between 1 IP subnet and another</p>
+<p>Identify destination IP from inside packet</p>
+<ul>
+<li>If its on a locally connected subnet, forward the packet to the local device</li>
+<li>If its on a remote subnet, forward to the next-hop router/gateway</li>
+</ul>
+<p>The &quot;map&quot; of forwarding locations is the routing table - it tells a router where the next hop should be</p>
+<p><strong>Static routing</strong> - Administratively define the routes</p>
+<ul>
+<li>Quick way to configure a route and fine for small network</li>
+<li>Does not change or automatically update</li>
+</ul>
+<p><strong>EIGRP</strong> - A routing protocol partly proprietary to Cisco. Easy to setup and use.</p>
+<p><strong>OSPF (Open Shortest Path First)</strong>
+<em>Used for routing traffic within an autonomous network</em></p>
+<ul>
+<li>More generic and well-established</li>
+<li>Used <strong>within</strong> a network that an individual has complete of, known as a Single Autonomous System (AS)</li>
+<li>Interior gateway protocol (used within an AS)</li>
+<li>&quot;Link-state protocol&quot; - Routing is based on the connectivity between routers</li>
+</ul>
+<p><strong>BGP (Border Gateway Protocol)</strong>
+<em>Used for routing traffic outside of an autonomous network</em></p>
+<ul>
+<li>Exterior gateway protocol (connect different autonomous systems)</li>
+<li>Commonly used on WAN and internet connections</li>
+</ul>
+
+</body>
+</html>

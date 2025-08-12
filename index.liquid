@@ -1,0 +1,45 @@
+---
+layout: default.liquid
+---
+
+<h1> Network+ Notes </h1>
+
+<h3> Ch 1 </h3>
+<ul>
+{% for note in collections.ch3 %}
+    <li>
+        <a href="{{ note.url | url }}"> {{ note.url | url }} </a>
+    </li>
+{% endfor %}
+</ul>
+
+<h3> Ch 2 </h3>
+<ul>
+{% for note in collections.ch2 %}
+    <li>
+        <a href="{{ note.url | url }}"> {{ note.url | url }} </a>
+    </li>
+{% endfor %}
+</ul>
+
+<h3> Ch 3 </h3>
+<ul>
+{% for note in collections.ch3 %}
+    <li>
+        <a href="{{ note.url | url }}"> {{ note.url | url }} </a>
+    </li>
+{% endfor %}
+</ul>
+
+<h3> Ch 4 </h3>
+<ul>
+{% for note in collections.ch4 %}
+    <li>
+        <a href="{{ note.url | url }}"> {{ note.url | url }} </a>
+    </li>
+{% endfor %}
+</ul>
+
+<footer style="text-align: center; padding: 10px 0px">
+    Made with <a href="https://www.11ty.dev/" target="_blank">11ty</a>. 
+</footer>

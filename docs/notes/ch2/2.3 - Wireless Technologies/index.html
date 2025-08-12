@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/my-notes/bundle.css">
+</head>
+<body>
+    
+<a href="/"> Back </a>
+
+<h3>Overview</h3>
+<p>IEEE 802.11 - The standard for wireless networking</p>
+<p>Also referenced as a generation</p>
+<ul>
+<li>802.11ac is Wi-Fi 5</li>
+<li>802.11ax is Wi-Fi 6 and is Wi-Fi 6E (extended)</li>
+<li>802.11be is Wi-Fi 7</li>
+</ul>
+<p>Frequencies used</p>
+<ul>
+<li>2.4 GHz, 5 GHz, 6 GHz, or a combination</li>
+<li>IEEE numbered groups of frequencies called <em>channels</em>
+<ul>
+<li>Using non-overlapping channels is optimal</li>
+</ul>
+</li>
+<li>The amount of frequency in use is the <em>bandwidth</em>
+<ul>
+<li>20 MHz, 40 MHz, 80 MHz, 160 MHz</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3>Band Steering</h3>
+<p>Many frequencies to choose from, but not all are optimal.</p>
+<p>Some devices may only use one frequency while other may have a choice.</p>
+<p>Access points can be set up with <em>band steering</em>, which allows us to specify how users may be able to use the frequencies in the best way.</p>
+<ul>
+<li>e.g. If there is a device that can communicate over 2.4 GHz or 5 GHz, we can force it to use 5 GHz by configuring our AP with band steering</li>
+</ul>
+<hr>
+<h3>802.11h</h3>
+<p>Adds interoperability features to 802.11</p>
+<p>The ITU creates guidelines that Wi-Fi complies with. These guidelines are now a part of the 802.11 standard</p>
+<p><strong>DFS (Dynamic Frequency Selection</strong>)
+Allows access points to automatically choose unused frequencies to avoid frequency conflicts</p>
+<p>If the access points changes channels, it will tell all devices connected to it to move with it</p>
+<p><strong>TPC (Transmit Power Control)</strong>
+The access point determines the power output of the client. In effect, all clients can be transmitting at the optimal level to avoid conflicts.</p>
+<p>This helps avoid conflict with satellite services</p>
+
+</body>
+</html>

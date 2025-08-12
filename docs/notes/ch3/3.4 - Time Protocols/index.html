@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/my-notes/bundle.css">
+</head>
+<body>
+    
+<a href="/"> Back </a>
+
+<p>NTP (Network Time Protocol) - Used to synchronize clocks on devices across a network</p>
+<p>NTP uses a client-server architecture.</p>
+<p>An NTP server listens on udp/123 for time requests from NTP clients. It does not update it's own time</p>
+<p>An NTP client and server can be on the same device</p>
+<p>NTS (Network Time Security) - Authentication protocol that ensures that the time received from an NTP server is accurate</p>
+<ul>
+<li>Requires an NTS Key Exchange Server on the network</li>
+</ul>
+<p>NTS Process with Key Exchange Server</p>
+<ol>
+<li>Device TLS handshake with KE Server</li>
+<li>Device requests cookie</li>
+<li>KE Server responds with cookie</li>
+<li>Device sends NTP request with cookie to NTP server</li>
+<li>NTP server responds with accurate time</li>
+</ol>
+<p>PTP (Precision Time Protocol) - Hardware base time synchronization</p>
+<ul>
+<li>Provides accuracy down to the nanosecond</li>
+</ul>
+
+</body>
+</html>

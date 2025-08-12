@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/my-notes/bundle.css">
+</head>
+<body>
+    
+<a href="/"> Back </a>
+
+<p>&quot;Simple Network Management Protocol&quot;</p>
+<p>Utilizes MIB (Memory Information Base) - A specialized database containing information about a device's operations</p>
+<p>We can query the MIB from a centralized &quot;network management console&quot;</p>
+<p>We query/&quot;poll&quot; specific values by referencing OIDs (object identifiers)</p>
+<p>SNMP utilizes udp/161</p>
+<hr>
+<h3>3 versions of SNMP</h3>
+<ul>
+<li>v1 - The OG, structured tables, unencrypted</li>
+<li>v2c - Data type enhancements, larger data transfers, unencrypted</li>
+<li>v3 - The new standard, includes capabilities for  message integrity, authentication, and encryption</li>
+</ul>
+<hr>
+<h3>More on OIDs</h3>
+<p>OIDs allow use to reference specific variables we want to pull from a device</p>
+<p>OIDs can be referenced by name or number</p>
+<ul>
+<li>Ex: 1.3.6.1.2.1.11.28.0</li>
+<li>Each number is out of a specific set of values</li>
+</ul>
+<p>Every variable in the MIB has a corresponding OID, some of which are common across devices and some of which are unique to a manufacturer</p>
+<hr>
+<p>MIB Walker - Cycles through every entry in the MIB and pulls the values</p>
+<p>SNPM Traps - An &quot;alarm&quot; sent by a monitored device</p>
+<ul>
+<li>Typically devices wait for a request for data</li>
+<li>By configuring an SNMP trap, we can have the device initiate a conversation instead when something specific happens</li>
+<li>Uses udp/162</li>
+</ul>
+<hr>
+<h3>Authentication</h3>
+<p>SNMP v1 and v2 use a community string, which is like a simple password authentication</p>
+<ul>
+<li>Common strings are &quot;public&quot; and &quot;private&quot;</li>
+</ul>
+<p>v3 introduced a username and password that is hashed</p>
+
+</body>
+</html>

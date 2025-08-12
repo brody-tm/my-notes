@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/my-notes/bundle.css">
+</head>
+<body>
+    
+<a href="/"> Back </a>
+
+<p>BOOTP / Bootstrap - The 1993 precursor to DHCP</p>
+<p>DHCP provides automatic IP address configuration and other configuration for most devices.</p>
+<h3>DHCP Process</h3>
+<p>D - Discover - Requesting device sends a DHCP discover packet over broadcast
+O - Offer - DHCP server sees discover packet and sends an offer over broadcast
+R - Request - Requesting device picks an IP and sends a request for it over broadcast
+A - Acknowledgement - DHCP server sends an acknowledgement</p>
+<p>In this process, the requesting device uses udp/68 and the DCHP server uses udp/67</p>
+<p>Because broadcasts only happen within a subnet, DHCP does not work across subnets. Luckily, we have a way to do this: DHCP Relays</p>
+<p>DHCP Relay - Forwards a discover packet to a subnet with a DHCP server</p>
+<p>Gem - The subnet mask tells the device which IP address it can communicate with directly and which it needs to send to the local gateway IP.</p>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/my-notes/bundle.css">
+</head>
+<body>
+    
+<a href="/"> Back </a>
+
+<p>Spoofing - pretending to be something you're not</p>
+<p>ARP - For when a device needs to communicate with another IP on the same network</p>
+<ul>
+<li>The device broadcasts a request asking &quot;whose MAC address is associated with this IP?&quot;</li>
+<li>The device with that IP will send a response back containing its MAC address</li>
+<li>The original device will cache the IP and MAC address together in its <em>ARP Cache</em></li>
+</ul>
+<p>ARP Poisoning / IP Spoofing - impersonating another device on a network</p>
+<ul>
+<li>ARP does not have security built in</li>
+<li>A malicious device sends an unsolicited ARP response
+<ul>
+<li>ARP is stateless, so a device does not remember if it has sent an ARP request</li>
+<li>Therefore, any time it receives an ARP response, it interprets it as usual</li>
+</ul>
+</li>
+<li>The malicious device says that ITS MAC address is associated with the IP of, say, a router</li>
+<li>The victim device will update its ARP cache, associating the IP address of the router with the MAC address of a malicious device</li>
+<li>The malicious device will commonly forward traffic sent to it to the router such that neither the victim nor router know about it</li>
+</ul>
+<p>DNS Poisoning - impersonating another website</p>
+<ul>
+<li>Can be done by modifying a DNS server or the responses it sends
+<ul>
+<li>Changing the IP address for a domain inside a DNS server</li>
+<li>Modifying DNS responses as they are being sent</li>
+</ul>
+</li>
+<li>Can also be done by modifying a machine's <code>hosts</code> file
+<ul>
+<li>A file that associates domain names with IP addresses and has a higher priority than DNS responses</li>
+</ul>
+</li>
+</ul>
+
+</body>
+</html>

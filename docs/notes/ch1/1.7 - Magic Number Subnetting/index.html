@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/my-notes/bundle.css">
+</head>
+<body>
+    
+<a href="/"> Back </a>
+
+<p><strong>Magic number subnetting</strong> is a shortcut technique used in IP subnetting to <strong>quickly determine subnet ranges and broadcast addresses</strong> without converting between binary and decimal repeatedly. It’s especially useful for <strong>Class C</strong> networks, but it can apply to any class.</p>
+<hr>
+<h3>When to Use It</h3>
+<p>Use magic number subnetting when:</p>
+<ul>
+<li>
+<p>You're given a subnet mask like <code>/26</code>, <code>/27</code>, etc.</p>
+</li>
+<li>
+<p>You want to quickly list <strong>subnet ranges</strong>, <strong>valid host ranges</strong>, and <strong>broadcast addresses</strong>.</p>
+</li>
+</ul>
+<hr>
+<h3>Magic number = 256 - interesting octet</h3>
+<h3>The magic number is the size of each subnet block, including:</h3>
+<ul>
+<li>
+<p>1 <strong>network address</strong> (aka subnet ID)</p>
+</li>
+<li>
+<p><strong>Usable host addresses</strong></p>
+</li>
+<li>
+<p>1 <strong>broadcast address</strong></p>
+</li>
+</ul>
+<hr>
+<h3>Table</h3>
+<p>![[Pasted image 20250612124958.png]]</p>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/my-notes/bundle.css">
+</head>
+<body>
+    
+<a href="/"> Back </a>
+
+<p>DHCP Scope - The available IP address range as well as excluded addresses, subnet mask, lease durations, and other options.</p>
+<p>DHCP Pools - Groupings of IP addresses (within scope)</p>
+<ul>
+<li>Each subnet has its own scope</li>
+</ul>
+<p>Addresses given by DHCP have a &quot;lease&quot; period for which they will remain assigned to a device</p>
+<p>A DHCP server will keep track of which mac addresses used which IPs and will assign a device the same IP it used before</p>
+<p>Address reservation - We can manually link a particular IP address to a MAC address so that the device will always get that IP</p>
+<p>DHCP Leases essentially auto renew:</p>
+<ul>
+<li>The device will check in with the DHCP server at two times to try to renew its IP:
+<ul>
+<li>T1: Once 50% of the lease time is up</li>
+<li>T2: Once 87.5% (7/8) of the lease time is up</li>
+</ul>
+</li>
+</ul>
+<p>DHCP options - A special field in the DHCP message that includes many options</p>
+<ul>
+<li>256 (254 usable) options</li>
+<li>0 is pad, 255 is end</li>
+<li>Common options are subnet mask, DNS server, domain name, etc.</li>
+<li>Option 129: Call Server IP address</li>
+<li>Option 135: HTTP Proxy for phone-specific applications</li>
+</ul>
+
+</body>
+</html>

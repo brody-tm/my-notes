@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/my-notes/bundle.css">
+</head>
+<body>
+    
+<a href="/"> Back </a>
+
+<p>Rogue DHCP Server - when IP addresses are assigned by an illegitimate server</p>
+<ul>
+<li>No security built in to DHCP</li>
+<li>Devices can be assigned invalid or duplicate addresses to shut down services</li>
+<li>Many switches include DHCP Snooping - examines all DHCP requests and only allows responses sent by authorized DHCP server</li>
+<li>Active Directory has a feature to designate &quot;authorized&quot; DHCP servers that will be allowed to issue IP addresses</li>
+</ul>
+<p>Responding to a rogue DHCP server</p>
+<ul>
+<li>Shut the server down and renew the IP addresses of all devices on the network to ensure  they are all valid</li>
+</ul>
+<p>Rogue Access Points</p>
+<ul>
+<li>Not inherently malicious, but can potentially be a significant backdoor to a network</li>
+<li>Easy to install - plugged into an ethernet point or &quot;wireless sharing&quot; used on a device</li>
+<li>To mitigate, schedule periodic surveys of your wireless network</li>
+<li>Also, 802.1X enforces mandatory authentication to access a network</li>
+</ul>
+<p>Wireless Evil Twin - A similar or exact copy of a legitimate access point used for malicious purposes</p>
+<ul>
+<li>&quot;The wireless version of phishing&quot; - trick people into connecting to them</li>
+<li>Often configured to overpower existing access points' signals</li>
+<li>To mitigate, encrypt traffic that you send (VPN, HTTPS)</li>
+<li>Well-suited for <em>on-path network attacks</em></li>
+</ul>
+<p>On-path network attacks - &quot;man-in-the-middle&quot;</p>
+<ul>
+<li>A malicious device will intercept traffic from a device, examine it, and forward it to the intended device</li>
+<li>ARP Poisoning is a notable example - an attacker spoofs the IP address of a router and intercepts the traffic sent to and from that router by a device</li>
+<li>Other examples: session hijacking, HTTPS spoofing, Wi-Fi eavesdropping</li>
+<li>Encrypting the data you send mitigates the damage of on-path attacks</li>
+</ul>
+
+</body>
+</html>

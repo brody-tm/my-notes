@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/my-notes/bundle.css">
+</head>
+<body>
+    
+<a href="/"> Back </a>
+
+<p>Data is transit - Data transmitted over a network</p>
+<p>Most network devices are concerned with forwarding data, not security</p>
+<p>To secure a network, we use:</p>
+<ul>
+<li>Network Based Protection - firewalls, IPS</li>
+<li>Transport Encryption - TLS, IPSec</li>
+</ul>
+<hr>
+<p>Data at rest - Data on a storage device</p>
+<p>To protect data at rest, data is often encrypted before being stored</p>
+<ul>
+<li>Different parts of a device may be encrypted</li>
+</ul>
+<p>In addition to encryption, permissions are also used in data storage</p>
+<hr>
+<p>Public Key Infrastructure (PKI) - Manages digital certificates and keys for an organization</p>
+<ul>
+<li>Large project that requires lots of planning</li>
+<li>Needed when an org deals with a lot of keys or issues a lot of certificates</li>
+</ul>
+<p>Digital Certificates - Given to users and devices, signed by a certificate authority</p>
+<ul>
+<li>Binds a public key with a digital signature from a CA</li>
+<li>Web of Trust - If A trusts B and B trusts C, A trusts C</li>
+<li>Creation of certificates is often built into OS, or can be done by a 3rd party</li>
+</ul>
+<p>Certificate Authority - The centralized authority that signs certificates</p>
+<ul>
+<li>Can be 3rd party or created by the organization</li>
+<li>Lets us know that, for example, site can be trusted</li>
+</ul>
+<p>Self-signed Certificates</p>
+<ul>
+<li>A custom made CA for an organization. If the organization trusts it, I trust it</li>
+</ul>
+<p>IAM (Identity and Access Management)</p>
+<ul>
+<li>Managing users and other entities (ex. programs) access to data</li>
+<li>Access control, authentication, authorization</li>
+</ul>
+<p>Least Privilege - A user can access only the bare minimum that is needed for their job</p>
+<p>RBAC (Role-Based Access Control) - An admin creates roles, such as &quot;manager&quot; or &quot;shipping department&quot;, that have different levels of access then assigns these roles to users</p>
+<p>Geographic Restrictions - Restriction based on location</p>
+<ul>
+<li>Can use IP, 802.11, or GPS (least to most accurate)</li>
+<li>&quot;Geofencing&quot; - Adding or removing permissions based on a users location</li>
+</ul>
+<p>Camera - CCTV (Closed Circuit TV)</p>
+<ul>
+<li>Modern cameras often include motion or object detection</li>
+<li>Many different cameras and networked together and recorded over time</li>
+</ul>
+<p>Door Locks</p>
+<ul>
+<li>Token-based access: RFID badge, magnetic swipe card, key fob</li>
+<li>Biometric: Hand/finger print, retina</li>
+<li>MFA - Example key fob + PIN</li>
+</ul>
+
+</body>
+</html>

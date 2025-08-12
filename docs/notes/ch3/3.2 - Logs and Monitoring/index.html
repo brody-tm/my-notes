@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/my-notes/bundle.css">
+</head>
+<body>
+    
+<a href="/"> Back </a>
+
+<p>We need to monitor our network devices to react to events, such as account access, redundant devices, and bandwidths.</p>
+<p>Oftentimes device logs are aggregated into a status dashboard, where we can get the status of all systems at a glance.</p>
+<p>NetFlow - Gathers summaries of statistics about the flow of traffic on a network</p>
+<ul>
+<li>Probe - Sits somewhere on a network to watch traffic</li>
+<li>Collector - Summary records are sent to the collector</li>
+</ul>
+<p>NetFlow essentially creates metadata about data that travels through networks, but sometimes we need to analyze raw data.</p>
+<p>We can do this using a <strong>protocol analyzer</strong> such as WireShark to gather network frames.</p>
+<p>Network Performance Baseline - Shows what a typical day for a network might look like using various metrics</p>
+<ul>
+<li>Useful for troubleshooting for comparison</li>
+<li>Often collected by SIEM or management console</li>
+</ul>
+<p>SIEM (Security and Information Event Manager)</p>
+<ul>
+<li>Logging of security events and info</li>
+<li>Includes both raw logs and summaries/reports</li>
+<li>Security alerts and real time information</li>
+<li>Log aggregation + long-term storage</li>
+</ul>
+<p>Syslog - a standard for transferring log file from many different devices to a central location, oftentimes a SIEM</p>
+<p>So data is being sent to the SIEM using syslog, but we quickly become overwhelmed with data. We can choose to only capture information of a certain priority or store certain longs for a shorter period of time than others.</p>
+<p>API Integration -  Allows us to control and manage devices directly from a central management station, as well as automate these tasks.</p>
+<ul>
+<li>No SSH required, essentially communication with devices in their &quot;native language&quot;</li>
+<li>You can write scripts to automatically control or manage devices using APIs</li>
+</ul>
+<p>Port Mirroring - Allows you to copy traffic from one or more switch ports to a port mirror</p>
+<ul>
+<li>Can also mirror from one switch to another</li>
+<li>Port mirror: AKA SPAN</li>
+</ul>
+
+</body>
+</html>

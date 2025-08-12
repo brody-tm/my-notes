@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/my-notes/bundle.css">
+</head>
+<body>
+    
+<a href="/"> Back </a>
+
+<p>Things change in a network: new operating systems, patches, updates, network modifications, applications, etc.</p>
+<p>We want to identify and document hardware and software settings</p>
+<p>&quot;Production Configuration&quot;: Most current working configuration for a device</p>
+<ul>
+<li>Hardware devices, firmware versions</li>
+<li>Driver and app versions</li>
+<li>Usually tested before installation</li>
+</ul>
+<p>&quot;Backup Configuration&quot;: A config we can roll back to if a new configuration doesn't work</p>
+<ul>
+<li>A backup should be made before any changes</li>
+</ul>
+<p>&quot;Golden/Baseline Configuration&quot;: Includes everything required for a new application instance to run</p>
+<ul>
+<li>OS configuration, firewall settings, the application itself</li>
+<li>Certifies that the application will work if all these things are done</li>
+<li>Integrity checks ensure that an instance is operating near the baseline</li>
+</ul>
+
+</body>
+</html>

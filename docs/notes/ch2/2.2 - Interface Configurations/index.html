@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/my-notes/bundle.css">
+</head>
+<body>
+    
+<a href="/"> Back </a>
+
+<h3>Basic Interface Configuration</h3>
+<p><strong>Speed</strong>: 10 / 100/ 1,000 Mb, 10 Gb
+<strong>Duplex</strong>: Half / Full</p>
+<ul>
+<li>Both of these settings must match on the device and switch. Configuration can be done automatically or manually</li>
+</ul>
+<p><strong>IP Address Management</strong></p>
+<hr>
+<h3>Link Aggregation (LAG)</h3>
+<p>Also known as <em>port bonding</em></p>
+<p>When multiple interfaces act like one big interface</p>
+<p><strong>Scenario</strong>: You have two switches that need to communicate. Each interface offers 1 Gb ethernet. By setting up 4 connections between the switches using LAG, they act as a single 4Gb link.</p>
+<p><strong>Link Aggregation Control Protocol (LACP)</strong>
+Automatically configure LAG</p>
+<hr>
+<h3>Maximum Transmission Unit (MTU)</h3>
+<p>Defines the largest size of a data packet that can be transmitted across a network connection in a single transaction</p>
+<p>Aims to reduce packet fragmentation, facilitating more efficient communication between devices</p>
+<hr>
+<h3>Jumbo Frames</h3>
+<p>Ethernet frames with more than 1,500 bytes of payload (the default ethernet frame size).</p>
+<p>Up to 9,216 bytes of an MTU (9,000 is the accepted norm)</p>
+<p>Increase transfer efficiency (fewer packets to swicth/route)</p>
+
+</body>
+</html>

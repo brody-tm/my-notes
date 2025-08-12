@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/my-notes/bundle.css">
+</head>
+<body>
+    
+<a href="/"> Back </a>
+
+<h3>Networking with IPv4</h3>
+<p><strong>IP Address</strong> - 32-bit / 4-byte unique identifier for every device on a network</p>
+<ul>
+<li>e.g. 192.168.1.165</li>
+</ul>
+<p><strong>Subnet Mask</strong> - used by the local device to determine what subnet it's on</p>
+<ul>
+<li>e.g. <strong>255.255.255.0</strong></li>
+<li>Means <strong>first 3 octets are the network address and last octet is the host address</strong></li>
+<li>Used by local device to determine what subnet it's on</li>
+</ul>
+<p><strong>Default Gateway</strong> - router that allows you to communication outside of your local subnet</p>
+<ul>
+<li>e.g. 192.168.1.1</li>
+<li>Must be an IP address on the local subnet</li>
+</ul>
+<h3>Special IPv4 Addresses</h3>
+<p><strong>Loopback Address</strong> - An address to yourself</p>
+<ul>
+<li>Ranges from 127.0.0.1 through 127.255.255.254</li>
+<li>Easy way to self-reference (ping 127.0.0.1) to confirm that your local IP stack is working properly</li>
+</ul>
+<p><strong>Reserved Addresses</strong> - Addresses set aside for future use or testing</p>
+<ul>
+<li>Ranges from 240.0.0.1 through 254.255.255.254</li>
+<li>&quot;Class E&quot; addresses</li>
+</ul>
+<p><strong>Virtual IP Addresses (VIP)</strong> - Addresses snot associated with a physical network adapter</p>
+<ul>
+<li>Virtual machines, internal router address</li>
+</ul>
+<h3>Private IP Ranges</h3>
+<p>![[Screenshot (20).png]]</p>
+
+</body>
+</html>

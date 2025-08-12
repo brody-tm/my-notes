@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/my-notes/bundle.css">
+</head>
+<body>
+    
+<a href="/"> Back </a>
+
+<h3>FTP (tcp/20, tcp/21)</h3>
+<p>Generic file transfer method</p>
+<p>Uses 2 ports:</p>
+<ul>
+<li>TCP/20</li>
+<li>TCP/21</li>
+</ul>
+<h3>SFTP - Secure FTP (tcp/22)</h3>
+<p>Uses SSH</p>
+<h3>Telnet (tcp/23)</h3>
+<p>Provides console access like SSH but unencrypted.</p>
+<h3>SMTP (tcp/25, tcp/587)</h3>
+<p>tcp/25: plaintext
+tcp/587: TLS encryption</p>
+<h3>DNS (udp/53)</h3>
+<p>Converts names to IP addresses</p>
+<p><em>May use tcp/53 for large transfers</em></p>
+<h3>DHCP (udp/67, udp/68)</h3>
+<p>Automated configuration of IP addresses, subnet mask, and more. Requires a DCHP server.</p>
+<p>IP addresses are assigned dynamically from a pool and are leased for a set interval.</p>
+<p>IP addresses can be reserved by assigning a MAC address</p>
+<h3>TFTP - Trivial File Transfer Protocol (udp/69)</h3>
+<p>For very simple file transfers such as configuration files when starting a system. No authentication.</p>
+<h3>HTTP (tcp/80)</h3>
+<p>Web Server Communication</p>
+<h3>HTTPS (tcp/443)</h3>
+<p>HTTPS with TLS or SSL encryption</p>
+<h3>NTP - Network Time Protocol (udp/123)</h3>
+<p>Used to keep devices in sync</p>
+<h3>SNMP - Simple Network Management Protocol (udp/161)</h3>
+<p>Used to gather statistics from network devices</p>
+<h3>LDAP - Lightweight Directory Access Protocol (tcp/389)</h3>
+<p>Used to store and retrieve information from network directories</p>
+<h3>LDAPS - LDAP Secure (tcp/636)</h3>
+<p>Non-standard implementation of LDAP over SSL</p>
+<h3>SMB - Server Message Block / CIFS Common Internet File System (tcp/445)</h3>
+<p>Protocol used by Windows for file and printer sharing. Define access rights, file share publishing, and file locking.</p>
+<h3>Syslog (udp/514)</h3>
+<p>Standard for message logging in a network. Consolidate many devices into a log</p>
+<p>Often used with a SIEM (Security Information and Event Manager)</p>
+<h3>Microsoft SQL (tcp/1433)</h3>
+<h3>RDP - Remote Desktop Protocol (tcp/3389)</h3>
+<p>Commonly used on a Windows host machine with clients on many devices</p>
+<h3>SIP -Session Initiation Protocol (tcp/5060, tcp/5061)</h3>
+<p>Voice over IP signaling - initiating and disconnecting calls</p>
+<p>Extending VoIP with video conferencing, messaging, file transfer, etc.</p>
+
+</body>
+</html>

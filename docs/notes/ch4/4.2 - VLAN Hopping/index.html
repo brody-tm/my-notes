@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/my-notes/bundle.css">
+</head>
+<body>
+    
+<a href="/"> Back </a>
+
+<p>Remember that we can logically group together devices in a <em>VLAN</em></p>
+<ul>
+<li>Organization, segmentation, security</li>
+</ul>
+<p>Devices on their own VLAN are effectively on their own network</p>
+<p>VLAN Hopping - when one VLAN communicates directly with another without passing through a router</p>
+<ul>
+<li>Not supposed to happen</li>
+<li>Done via 2 methods: switch spoofing and double tagging</li>
+</ul>
+<p>VLAN Trunk - We can configure a <em>VLAN trunk</em> to connect multiple VLANs on the same switch to another switch with a single cable, rather than connecting each VLAN to the switch separately.</p>
+<p>Switch Spoofing takes advantage of some switches' autoconfiguration process that designates each interface as either a device or a trunk.</p>
+<ul>
+<li>An attacker pretends to be a switch to gain access to other VLANs via the trunk</li>
+<li>Turning off trunk negotiation and manually configuring trunks is recommended</li>
+</ul>
+<p>Double Tagging</p>
+<ul>
+<li>VLAN tags - used in trunking between switches to show which VLAN the data is destined for</li>
+<li>Double tagging involves crafting a packet that includes multiple VLAN tags</li>
+<li>Double tagging exploits the <em>native VLAN</em> configuration - the first VLAN tag is removed by the first switch and the second is now visible</li>
+<li>Responses cannot be sent back to messages sent with double tagging</li>
+<li>To mitigate this, don't put any devices on the native VLAN</li>
+</ul>
+
+</body>
+</html>

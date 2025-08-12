@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/my-notes/bundle.css">
+</head>
+<body>
+    
+<a href="/"> Back </a>
+
+<p><em>Reminder:</em> MAC addresses are 48 bits / 6 bytes</p>
+<p>The first half of a MAC address is called the Organizationally Unique Identifier (OUI)</p>
+<ul>
+<li>the manufacturer</li>
+</ul>
+<p>The latter half of a MAC address is called the Network Interface Controller-Specific</p>
+<ul>
+<li>the serial number</li>
+<li>&quot;burned in address&quot;</li>
+</ul>
+<p>Table in the switch keeps track of MAC addresses and which interfaces they are associated with</p>
+<ul>
+<li>Entries in this table are typically cached and age out periodically</li>
+</ul>
+<p>MAC address table creation</p>
+<ul>
+<li>All inbound MAC addresses are recorded if not already in the table
+<ul>
+<li>The interface over which the traffic was received is recorded as the &quot;output interface&quot;</li>
+</ul>
+</li>
+<li>Any traffic of which the destination MAC is not know persists as &quot;inbound&quot; traffic</li>
+</ul>
+<hr>
+<table>
+<thead>
+<tr>
+<th>Mac Address</th>
+<th>Output Interface</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1000:1111:1111</td>
+<td>F0/1</td>
+</tr>
+<tr>
+<td>1000:2222:2222</td>
+<td>F0/2</td>
+</tr>
+<tr>
+<td>1000:3333:4444</td>
+<td>F0/3</td>
+</tr>
+</tbody>
+</table>
+<p>MAC addresses tables are <em>central</em> to the switching process</p>
+<hr>
+<h3>Mac Flooding</h3>
+<p>The MAC address table begins to fill up as more devices send traffic over a switch. Once it does fill up, all traffic will be automatically forwarded to every interface on the switch.</p>
+<ul>
+<li>This allows an attacker to see all traffic being sent over a switch</li>
+<li>Modern switches' port security setting allow MAC flooding to be restricted</li>
+</ul>
+
+</body>
+</html>

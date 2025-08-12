@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/my-notes/bundle.css">
+</head>
+<body>
+    
+<a href="/"> Back </a>
+
+<h3>Methods for Securing a Wireless Network</h3>
+<ul>
+<li>Authentication (username and password, MFA)</li>
+<li>Encrypt wireless traffic</li>
+<li>Verify integrity of communication
+<ul>
+<li>Message Integrity Check (MIC) - The received data should be identical to the original sent data</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3>Wireless Encryption Types</h3>
+<p>WEP (Wired Equivalent Privacy) - Deprecated and insecure legacy encryption type</p>
+<p>WPA (Wi-Fi Protected Access) - The 2002 replacement for WEP</p>
+<ul>
+<li>Short-term bridge between WEP and the next successor that could run on existing hardware</li>
+</ul>
+<p>WPA2 (2004) and CCMP</p>
+<ul>
+<li>CCMP block cipher mode - offered encryption and integrity in the same protocol
+<ul>
+<li>Encryption: AES</li>
+<li>MIC: CBC-MAC</li>
+</ul>
+</li>
+</ul>
+<p>WPA3 (2018) and GCMP</p>
+<ul>
+<li>GCMP block cipher mode</li>
+<li>Encryption with AES again</li>
+<li>MIC with GMAC (Galois Message Authentication Code)</li>
+</ul>
+
+</body>
+</html>

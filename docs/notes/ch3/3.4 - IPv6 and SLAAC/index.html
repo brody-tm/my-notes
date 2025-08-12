@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/my-notes/bundle.css">
+</head>
+<body>
+    
+<a href="/"> Back </a>
+
+<p>IPv6 devices can assign IP addresses to themselves.</p>
+<p>This is known as &quot;Stateless Addressing&quot;</p>
+<ul>
+<li>No dedicated DHCP server</li>
+<li>No keeping track of IP or MAC addresses</li>
+<li>No lease times</li>
+</ul>
+<p>The protocol is SLAAC (Stateless Address Autoconfiguration)</p>
+<ul>
+<li>A device automatically configures an IP address for itself without a DHCP server</li>
+</ul>
+<p>DAD (Duplicate Address Detection) ensures that duplicate IPs are not used</p>
+<p>NDP (Neighbor Discovery Protocol) - Discover other devices on a network</p>
+<ul>
+<li>IPv4 uses ARP, which uses broadcast</li>
+<li>NDP uses multicast</li>
+</ul>
+<p>NDP also allows us to discover routers:</p>
+<ul>
+<li>Router Solicitation (RS) - Multicast by a device to all IPv6 routers</li>
+<li>Router Advertisement (RA) - Sent to a device in response to a solicitation OR multicast unsolicited</li>
+</ul>
+<p>How SLAAC Works</p>
+<ol>
+<li>Device determines what subnet it is on using RS through NDP</li>
+<li>Router responds with an RA, device now knows the 64-bit subnet prefix
+<ul>
+<li>Remember, IPv6 addresses are 128 bits</li>
+</ul>
+</li>
+<li>Last 64 bits are often made from the device's MAC addresses with &quot;ff:fe&quot; in the middle or randomized</li>
+<li>Before using the IP, DAD is used to check the network if that IP is being used</li>
+</ol>
+
+</body>
+</html>

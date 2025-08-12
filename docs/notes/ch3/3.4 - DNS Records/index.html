@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/my-notes/bundle.css">
+</head>
+<body>
+    
+<a href="/"> Back </a>
+
+<p>DNS Records - Also known as Resource Records (RR). Over 30 types.</p>
+<p>Start of Authority (SOA) Record - Describes the DNS zone details</p>
+<pre><code>IN SOA example.com
+*serial number*
+*refresh timeframe*
+*retry timeframe*
+*expiry timeframe*
+*caching duration (TTL)*
+</code></pre>
+<p>Address (A, AAAA) Record - Defines the IP address of a host</p>
+<ul>
+<li>A records are for IPv4 while AAAA records are for IPv6</li>
+</ul>
+<p>Canonical Name (CNAME) Record - An alias for another domain name</p>
+<p>Mail Exchanger (MX) Record - Determines the host name for the mail server</p>
+<p>Text (TXT) Record - Includes useful human-readable information</p>
+<p>TXT Records are often used for:</p>
+<ul>
+<li>SPF (Sender Policy Framework) - tells the DNS server what email servers are authorized to send mail on our behalf to <strong>prevent mail spoofing</strong></li>
+<li>DKIM (Domain Keys Identified Mail) keys - digitally sign outgoing mail to be verified</li>
+</ul>
+<p>Name Server (NS) Record - List the name servers for a domain</p>
+<p>Pointer (PTR) Record - The reverse of an A or AAAA record, used for reverse DNS lookup</p>
+<ul>
+<li>Lookup IP and get domain name</li>
+</ul>
+
+</body>
+</html>
